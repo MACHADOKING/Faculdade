@@ -57,7 +57,7 @@ void printQueue(Queue *queue) {
   Node *current = queue->front;
 
   while (current != NULL) {
-    printf("%c ", current->data);
+    printf("%c", current->data);
     current = current->next;
   }
 
@@ -91,7 +91,7 @@ void printStack(Stack *stack) {
   Node *current = stack->top;
 
   while (current != NULL) {
-    printf("%c ", current->data);
+    printf("%c", current->data);
     current = current->next;
   }
 
@@ -135,7 +135,7 @@ int main() {
   initStack(&dnaStack);
 
   // Ler a entrada de DNA
-  char dna[100];
+  char dna[101]; // Adicionado espaço para '\0' no final da string
   printf("Digite a sequencia de DNA: ");
   fgets(dna, sizeof(dna), stdin);
 

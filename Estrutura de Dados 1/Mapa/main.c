@@ -154,13 +154,15 @@ int main() {
         enqueue(&dnaQueue, dna[i]);
         i++;
     }
+    
+    // Imprimir a fila
+    printf("Fila original: ");
+    printQueue(&dnaQueue);
 
     // Converter para a dupla fita do DNA
     convertDNA(&dnaQueue, &dnaStack);
 
-    // Imprimir a fila e a pilha
-    printf("Fila original: ");
-    printQueue(&dnaQueue);
+    // Imprimir a pilha
 
     printf("Pilha convertida: ");
     printStack(&dnaStack);
